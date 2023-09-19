@@ -1,0 +1,99 @@
+body {
+  background-color: white;
+  height: 1200px;
+}
+
+.button {
+  background-color: transparent;
+  text-transform: uppercase;
+  padding: 8px 16px;
+  border: 1px solid black;
+  color: black;
+  font-weight: bold;
+}
+
+.button.btn-white {
+  border: 1px solid white;
+  color: white;
+}
+
+#header {
+  background: url("foto1.jpg");
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  padding-top: 150px;
+}
+
+#header .title {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin: 0;
+}
+
+#header .text {
+  margin-bottom: 50px;
+}
+
+#main {
+  display: flex;
+}
+
+#main .main-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  margin: 150px auto 0 auto;
+  width: 660px;
+  color: black;
+}
+
+#main .main-wrapper .left-side {
+  flex: 1;
+}
+
+#main .main-wrapper .left-side img {
+  height: 100%;
+  width: 100%;
+}
+
+#main .main-wrapper .right-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+#main .main-wrapper .right-side .over-title {
+  color: lightgrey;
+  text-transform: uppercase;
+  font-size: 11px;
+}
+
+#main .main-wrapper .right-side .divider {
+  width: 100px;
+  border-bottom: 1.5px solid black;
+}
+
+#main .main-wrapper .right-side .text {
+  color: grey;
+  line-height: 22px;
+}
+
+#main .main-wrapper .right-side .list {
+  list-style: none;
+  color: grey;
+  line-height: 22px;
+}
+
+#main .main-wrapper .right-side .list li::before {
+  content: "\2022";
+  color: rgb(0, 193, 10);
+  font-weight: bold;
+  display: inline-block;
+  font-size: 22px;
+  width: 1em;
+  margin-left: -1em;
+}
